@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- LifeInvader "f" style logo -->
+    <rect
+        android:fillColor="#4CAF50"
+        android:x="0"
+        android:y="0"
+        android:width="100"
+        android:height="100"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M55,20 L55,35 L70,35 L70,50 L55,50 L55,85 L40,85 L40,50 L30,50 L30,35 L40,35 L40,28 C40,18 46,15 55,15 Z"/>
+    <!-- Invader antenna -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,15 L35,25 M70,15 L65,25 M50,10 L50,20"/>
+</vector>
