@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="iFruit"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GTA5Phone">
+
+        <!-- Lock Screen / Entry -->
+        <activity
+            android:name=".LockScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home / App Grid -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Contacts -->
+        <activity
+            android:name=".ContactsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- LifeInvader -->
+        <activity
+            android:name=".LifeInvaderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Maze Bank -->
+        <activity
+            android:name=".MazeBankActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- eyefind Browser -->
+        <activity
+            android:name=".EyeFindActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Music / Radio -->
+        <activity
+            android:name=".RadioActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Settings -->
+        <activity
+            android:name=".SettingsAppActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Call Screen -->
+        <activity
+            android:name=".CallActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
