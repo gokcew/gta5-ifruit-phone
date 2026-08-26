@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#1A1A1A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="R"
+            android:textColor="#00B4FF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/circle_avatar"
+            android:layout_marginEnd="10dp"/>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Ron Jakowski" android:textColor="#FFFFFF"
+                android:textSize="14sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="2 days ago · Blaine County" android:textColor="#888888"
+                android:textSize="11sp" android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="⋯" android:textColor="#888888" android:textSize="20sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="They're watching us man. The government, the aliens, Merryweather. Stay off the grid. Cash only. Delete this after reading. #ConspiracyIsReal #StayAlert #TheyCantStopUs"
+        android:textColor="#DDDDDD"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#111111">
+        <TextView android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center"
+            android:text="👍  Like · 11" android:textColor="#888888"
+            android:textSize="12sp" android:fontFamily="sans-serif-condensed"/>
+        <View android:layout_width="1dp" android:layout_height="match_parent" android:background="#222222"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center"
+            android:text="💬  Comment · 4" android:textColor="#888888"
+            android:textSize="12sp" android:fontFamily="sans-serif-condensed"/>
+        <View android:layout_width="1dp" android:layout_height="match_parent" android:background="#222222"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center"
+            android:text="↗  Share" android:textColor="#888888"
+            android:textSize="12sp" android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+</LinearLayout>
