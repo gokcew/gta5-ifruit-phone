@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Music note -->
+    <path
+        android:fillColor="#A3FF47"
+        android:pathData="M65,10 L65,55 C63,53 59,52 55,53 C47,55 42,61 44,67 C46,73 53,76 61,74 C69,72 74,66 72,60 L72,25 L80,22 L80,10 Z"/>
+    <!-- Second note -->
+    <path
+        android:fillColor="#78C900"
+        android:pathData="M38,25 L38,65 C36,63 32,62 28,63 C20,65 15,71 17,77 C19,83 26,86 34,84 C42,82 47,76 45,70 L45,40 L53,37 L53,25 Z"/>
+    <!-- Sound waves -->
+    <path
+        android:fillColor="#A3FF47"
+        android:pathData="M82,30 C88,36 88,44 82,50"
+        android:strokeColor="#A3FF47"
+        android:strokeWidth="3"
+        android:fillAlpha="0"/>
+    <path
+        android:fillColor="#A3FF47"
+        android:pathData="M87,24 C96,33 96,47 87,56"
+        android:strokeColor="#66A3FF47"
+        android:strokeWidth="3"
+        android:fillAlpha="0"/>
+</vector>
