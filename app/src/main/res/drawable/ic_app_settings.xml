@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Gear outer -->
+    <path
+        android:fillColor="#888888"
+        android:pathData="M50,15 L56,22 L65,18 L70,27 L79,28 L79,38 L87,45 L83,54 L87,63 L79,68 L78,78 L68,79 L63,87 L53,84 L50,92 L47,84 L37,87 L32,79 L22,78 L21,68 L13,63 L17,54 L13,45 L21,38 L21,28 L30,27 L35,18 L44,22 Z"/>
+    <!-- Gear inner (dark cutout) -->
+    <path
+        android:fillColor="#111111"
+        android:pathData="M50,30 C39,30 30,39 30,50 C30,61 39,70 50,70 C61,70 70,61 70,50 C70,39 61,30 50,30 Z"/>
+    <!-- Center dot -->
+    <path
+        android:fillColor="#888888"
+        android:pathData="M50,42 C45,42 42,45 42,50 C42,55 45,58 50,58 C55,58 58,55 58,50 C58,45 55,42 50,42 Z"/>
+</vector>
