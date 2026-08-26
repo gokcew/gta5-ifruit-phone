@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home">
+
+    <!-- ===== STATUS BAR ===== -->
+    <LinearLayout
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical"
+        android:background="#AA000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gruppe Sechs"
+            android:textColor="#A3FF47"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <TextView
+            android:id="@+id/tvStatusTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            android:textColor="@color/gta_white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_signal_bars"
+            android:layout_marginEnd="4dp"/>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_battery"/>
+    </LinearLayout>
+
+    <!-- ===== HEADER ===== -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="#CC000000"
+        app:layout_constraintTop_toBottomOf="@id/statusBar"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- iFruit Logo text -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="iFruit"
+            android:textColor="#A3FF47"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:letterSpacing="0.1"/>
+
+        <!-- Player money -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BANK"
+                android:textColor="#888888"
+                android:textSize="9sp"
+                android:fontFamily="sans-serif-condensed"
+                android:letterSpacing="0.1"/>
+
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2,587,430"
+                android:textColor="#A3FF47"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ===== GREEN DIVIDER ===== -->
+    <View
+        android:id="@+id/dividerTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A3FF47"
+        android:alpha="0.4"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- ===== APP GRID (ScrollView) ===== -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/dividerTop"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <GridLayout
+            android:id="@+id/appGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="3"
+            android:padding="12dp"
+            android:useDefaultMargins="true">
+
+            <!-- Row 1 -->
+            <!-- CONTACTS -->
+            <LinearLayout
+                android:id="@+id/appContacts"
+                style="@style/AppIconContainer"
+                android:onClick="openContacts">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_app_contacts"
+                    android:background="@drawable/selector_app_icon"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contacts"
+                    style="@style/AppIconLabel"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- MESSAGES -->
+            <LinearLayout
+                android:id="@+id/appMessages"
+                style="@style/AppIconContainer"
+                android:onClick="openMessages">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_app_messages"
+                    android:background="@drawable/selector_app_icon"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Messages"
+                    style="@style/AppIconLabel"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- LIFEINVADER -->
+            <LinearLayout
+                android:id="@+id/appLifeInvader"
+                style="@style/AppIconContainer"
+                android:onClick="openLifeInvader">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_app_lifeinvader"
+                    android:background="@drawable/selector_app_icon"
+                    android:padding="0dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LifeInvader"
+                    style="@style/AppIconLabel"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- MAZE BANK -->
+            <LinearLayout
+                android:id="@+id/appMazeBank"
+                style="@style/AppIconContainer"
+                android:onClick="openMazeBank">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_app_mazebank"
+                    android:background="@drawable/selector_app_icon"
+                    android:padding="0dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maze Bank"
+                    style="@style/AppIconLabel"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <!-- EYEFIND -->
+            <LinearLayout
+                android:id="@+id/appEyeFind"
+                style="@style/AppIconContainer"
+                android:onClick="openEyeFind">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_app_eyefind"
+                    android:background="@drawable/selector_app_icon"
+                    android:padding="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="eyefind"
+                    style="@style/AppIconLabel"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- RADIO -->
+            <LinearLayout
+                android:id="@+id/appRadio"
+                style="@style/AppIconContainer"
+                android:onClick="openRadio">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_app_radio"
+                    android:background="@drawable/selector_app_icon"
+                    android:padding="6dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Radio"
+                    style="@style/AppIconLabel"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- CAMERA -->
+            <LinearLayout
+                android:id="@+id/appCamera"
+                style="@style/AppIconContainer"
+                android:onClick="openCamera">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_app_camera"
+                    android:background="@drawable/selector_app_icon"
+                    android:padding="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camera"
+                    style="@style/AppIconLabel"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- INTERNET -->
+            <LinearLayout
+                android:id="@+id/appInternet"
+                style="@style/AppIconContainer"
+                android:onClick="openEyeFind">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_app_internet"
+                    android:background="@drawable/selector_app_icon"
+                    android:padding="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Internet"
+                    style="@style/AppIconLabel"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Row 3 -->
+            <!-- MONEY & SERVICES -->
+            <LinearLayout
+                android:id="@+id/appMoney"
+                style="@style/AppIconContainer"
+                android:onClick="openMazeBank">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_app_money"
+                    android:background="@drawable/selector_app_icon"
+                    android:padding="6dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Money"
+                    style="@style/AppIconLabel"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- SETTINGS -->
+            <LinearLayout
+                android:id="@+id/appSettings"
+                style="@style/AppIconContainer"
+                android:onClick="openSettings">
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_app_settings"
+                    android:background="@drawable/selector_app_icon"
+                    android:padding="6dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    style="@style/AppIconLabel"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+        </GridLayout>
+    </ScrollView>
+
+    <!-- ===== BOTTOM NAV BAR ===== -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#EE000000"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Call button (Phone) -->
+        <LinearLayout
+            android:id="@+id/btnCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:onClick="openDialer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📞"
+                android:textSize="22sp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:textColor="#A3FF47"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:letterSpacing="0.05"/>
+        </LinearLayout>
+
+        <!-- Home (center logo) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⬛"
+                android:textSize="22sp"
+                android:textColor="#A3FF47"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#888888"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+
+        <!-- Back button -->
+        <LinearLayout
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:onClick="goBack">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◀"
+                android:textColor="#CCCCCC"
+                android:textSize="20sp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="#888888"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
