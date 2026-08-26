@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.GTA5Phone" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/gta_bg_dark</item>
+        <item name="android:statusBarColor">@color/status_bar_bg</item>
+        <item name="android:navigationBarColor">@color/gta_bg_dark</item>
+        <item name="colorPrimary">@color/gta_green</item>
+        <item name="colorPrimaryDark">@color/gta_bg_dark</item>
+        <item name="colorAccent">@color/gta_green</item>
+        <item name="android:textColor">@color/gta_white</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:windowAnimationStyle">@style/WindowSlide</item>
+    </style>
+
+    <style name="WindowSlide" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- GTA App Icon Label Style -->
+    <style name="AppIconLabel">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/gta_white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+
+    <!-- App Icon Container -->
+    <style name="AppIconContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_columnWeight">1</item>
+    </style>
+
+    <!-- Quick Link style for eyefind -->
+    <style name="QuickLink">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- GTA Title Bar Style -->
+    <style name="GtaTitleBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gta_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+</resources>
