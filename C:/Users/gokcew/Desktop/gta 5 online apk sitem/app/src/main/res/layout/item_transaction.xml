@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Transaction 1 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="@drawable/bg_contact_row" android:paddingStart="4dp" android:paddingEnd="4dp">
+        <TextView android:layout_width="32dp" android:layout_height="32dp"
+            android:gravity="center" android:text="💰" android:textSize="16sp"
+            android:background="@drawable/circle_btn_dark" android:layout_marginEnd="12dp"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Heist Proceeds" android:textColor="#FFFFFF"
+                android:textSize="13sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Today, 14:32" android:textColor="#555555"
+                android:textSize="11sp" android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="+$500,000" android:textColor="#A3FF47"
+            android:textSize="13sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0FFFFFFF"/>
+
+    <!-- Transaction 2 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="4dp" android:paddingEnd="4dp">
+        <TextView android:layout_width="32dp" android:layout_height="32dp"
+            android:gravity="center" android:text="🚗" android:textSize="16sp"
+            android:background="@drawable/circle_btn_dark" android:layout_marginEnd="12dp"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Pegassi Zentorno" android:textColor="#FFFFFF"
+                android:textSize="13sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Yesterday, 19:11" android:textColor="#555555"
+                android:textSize="11sp" android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="-$725,000" android:textColor="#FF4444"
+            android:textSize="13sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0FFFFFFF"/>
+
+    <!-- Transaction 3 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="@drawable/bg_contact_row" android:paddingStart="4dp" android:paddingEnd="4dp">
+        <TextView android:layout_width="32dp" android:layout_height="32dp"
+            android:gravity="center" android:text="🏠" android:textSize="16sp"
+            android:background="@drawable/circle_btn_dark" android:layout_marginEnd="12dp"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Apartment - Eclipse Blvd" android:textColor="#FFFFFF"
+                android:textSize="13sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="3 days ago" android:textColor="#555555"
+                android:textSize="11sp" android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="-$200,000" android:textColor="#FF4444"
+            android:textSize="13sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0FFFFFFF"/>
+
+    <!-- Transaction 4 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="4dp" android:paddingEnd="4dp">
+        <TextView android:layout_width="32dp" android:layout_height="32dp"
+            android:gravity="center" android:text="📦" android:textSize="16sp"
+            android:background="@drawable/circle_btn_dark" android:layout_marginEnd="12dp"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="CEO Crates Sale" android:textColor="#FFFFFF"
+                android:textSize="13sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="4 days ago" android:textColor="#555555"
+                android:textSize="11sp" android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="+$1,200,000" android:textColor="#A3FF47"
+            android:textSize="13sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0FFFFFFF"/>
+
+    <!-- Transaction 5 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="52dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:background="@drawable/bg_contact_row" android:paddingStart="4dp" android:paddingEnd="4dp">
+        <TextView android:layout_width="32dp" android:layout_height="32dp"
+            android:gravity="center" android:text="💣" android:textSize="16sp"
+            android:background="@drawable/circle_btn_dark" android:layout_marginEnd="12dp"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Insurance Claim - Buzzard" android:textColor="#FFFFFF"
+                android:textSize="13sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="5 days ago" android:textColor="#555555"
+                android:textSize="11sp" android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="-$10,000" android:textColor="#FF4444"
+            android:textSize="13sp" android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+
+</LinearLayout>
