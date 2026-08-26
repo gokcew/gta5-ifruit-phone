@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GTA 5 iFruit Phone Colors -->
+    <color name="gta_bg_dark">#0A0A0A</color>
+    <color name="gta_bg_medium">#111111</color>
+    <color name="gta_bg_card">#1A1A1A</color>
+    <color name="gta_green">#A3FF47</color>
+    <color name="gta_green_dark">#78C900</color>
+    <color name="gta_blue">#00B4FF</color>
+    <color name="gta_yellow">#FFD700</color>
+    <color name="gta_orange">#FF6B00</color>
+    <color name="gta_red">#FF2020</color>
+    <color name="gta_white">#FFFFFF</color>
+    <color name="gta_grey">#888888</color>
+    <color name="gta_grey_light">#CCCCCC</color>
+    <color name="gta_grey_dark">#333333</color>
+    <color name="gta_divider">#2A2A2A</color>
+
+    <!-- App specific -->
+    <color name="lifeinvader_green">#4CAF50</color>
+    <color name="mazebank_blue">#1565C0</color>
+    <color name="eyefind_orange">#E65100</color>
+    <color name="status_bar_bg">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="overlay_dark">#99000000</color>
+    <color name="overlay_medium">#66000000</color>
+</resources>
