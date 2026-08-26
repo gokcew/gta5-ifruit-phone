@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iFruit</string>
+
+    <!-- Lock Screen -->
+    <string name="swipe_unlock">SWIPE TO UNLOCK</string>
+    <string name="carrier">Gruppe Sechs</string>
+
+    <!-- Home -->
+    <string name="home_title">iFruit</string>
+
+    <!-- Apps -->
+    <string name="app_contacts">Contacts</string>
+    <string name="app_lifeinvader">LifeInvader</string>
+    <string name="app_mazebank">Maze Bank</string>
+    <string name="app_eyefind">eyefind</string>
+    <string name="app_radio">Radio</string>
+    <string name="app_settings">Settings</string>
+    <string name="app_camera">Camera</string>
+    <string name="app_messages">Messages</string>
+    <string name="app_internet">Internet</string>
+    <string name="app_money">Money &amp; Services</string>
+
+    <!-- Contacts -->
+    <string name="contacts_title">CONTACTS</string>
+
+    <!-- LifeInvader -->
+    <string name="lifeinvader_title">LifeInvader</string>
+    <string name="lifeinvader_tagline">Sharing your life, so you don\'t have to</string>
+
+    <!-- Maze Bank -->
+    <string name="mazebank_title">Maze Bank</string>
+    <string name="mazebank_tagline">Our business is your business</string>
+    <string name="balance_label">CURRENT BALANCE</string>
+
+    <!-- eyefind -->
+    <string name="eyefind_title">eyefind</string>
+    <string name="eyefind_tagline">You can find it if you can see it</string>
+    <string name="search_hint">Search the web...</string>
+
+    <!-- Radio -->
+    <string name="radio_title">RADIO</string>
+    <string name="now_playing">NOW PLAYING</string>
+
+    <!-- Settings -->
+    <string name="settings_title">SETTINGS</string>
+
+    <!-- Call -->
+    <string name="calling">CALLING...</string>
+    <string name="end_call">END</string>
+</resources>
