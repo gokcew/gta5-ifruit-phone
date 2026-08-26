@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080B14">
+
+    <!-- Status Bar -->
+    <include layout="@layout/include_status_bar"
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Title Bar -->
+    <LinearLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/bg_title_bar"
+        app:layout_constraintTop_toBottomOf="@id/statusBar">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_app_settings"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SETTINGS"
+            android:textColor="#A3FF47"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+
+    <!-- Settings items -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/titleBar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- PLAYER Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:text="  PLAYER"
+                android:textColor="#555555"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:fontFamily="sans-serif-condensed"
+                android:background="#0A0A0A"/>
+
+            <include layout="@layout/item_settings_toggle"
+                android:id="@+id/settingCEO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#111111"/>
+
+            <!-- PHONE Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:text="  PHONE"
+                android:textColor="#555555"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:fontFamily="sans-serif-condensed"
+                android:background="#0A0A0A"/>
+
+            <!-- Volume -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/bg_contact_row"
+                android:clickable="true" android:focusable="true">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Volume" android:textColor="#FFFFFF"
+                        android:textSize="15sp" android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Ring, media, notifications"
+                        android:textColor="#888888" android:textSize="11sp"
+                        android:fontFamily="sans-serif-condensed"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🔊" android:textSize="18sp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#111111"/>
+
+            <!-- Brightness -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:clickable="true" android:focusable="true">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Brightness" android:textColor="#FFFFFF"
+                        android:textSize="15sp" android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Screen brightness" android:textColor="#888888"
+                        android:textSize="11sp" android:fontFamily="sans-serif-condensed"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="☀" android:textColor="#FFD700" android:textSize="20sp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#111111"/>
+
+            <!-- Do not Disturb -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/bg_contact_row"
+                android:clickable="true" android:focusable="true">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Do Not Disturb" android:textColor="#FFFFFF"
+                        android:textSize="15sp" android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Block calls and notifications"
+                        android:textColor="#888888" android:textSize="11sp"
+                        android:fontFamily="sans-serif-condensed"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/toggleDND"
+                    android:layout_width="52dp"
+                    android:layout_height="28dp"
+                    android:gravity="center"
+                    android:text="OFF"
+                    android:textColor="#888888"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="@drawable/toggle_off"
+                    android:clickable="true" android:focusable="true"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#111111"/>
+
+            <!-- ACCOUNT Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:text="  ACCOUNT"
+                android:textColor="#555555"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:fontFamily="sans-serif-condensed"
+                android:background="#0A0A0A"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:clickable="true" android:focusable="true">
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="👤"
+                    android:textSize="24sp"
+                    android:background="@drawable/circle_avatar"
+                    android:layout_marginEnd="14dp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Online Player" android:textColor="#FFFFFF"
+                        android:textSize="16sp" android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Rank 500 · CEO" android:textColor="#A3FF47"
+                        android:textSize="12sp" android:fontFamily="sans-serif-condensed"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="›" android:textColor="#555555" android:textSize="22sp"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#111111"/>
+
+            <!-- Wanted Level toggle -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/bg_contact_row"
+                android:clickable="true" android:focusable="true">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Show Wanted Level" android:textColor="#FFFFFF"
+                        android:textSize="15sp" android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Display stars on status bar"
+                        android:textColor="#888888" android:textSize="11sp"
+                        android:fontFamily="sans-serif-condensed"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/toggleWanted"
+                    android:layout_width="52dp"
+                    android:layout_height="28dp"
+                    android:gravity="center"
+                    android:text="ON"
+                    android:textColor="#0A0A0A"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="@drawable/toggle_on"
+                    android:clickable="true" android:focusable="true"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#111111"/>
+
+            <!-- About -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:clickable="true" android:focusable="true">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="About iFruit"
+                    android:textColor="#FFFFFF" android:textSize="15sp"
+                    android:textStyle="bold" android:fontFamily="sans-serif-condensed"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="v 1.0" android:textColor="#555555" android:textSize="12sp"
+                    android:fontFamily="sans-serif-condensed"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
