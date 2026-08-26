@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Eye shape -->
+    <path
+        android:fillColor="#E65100"
+        android:pathData="M10,50 C10,50 30,20 50,20 C70,20 90,50 90,50 C90,50 70,80 50,80 C30,80 10,50 10,50 Z"/>
+    <!-- Pupil -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,35 C41,35 34,42 34,50 C34,58 41,65 50,65 C59,65 66,58 66,50 C66,42 59,35 50,35 Z"/>
+    <!-- Iris -->
+    <path
+        android:fillColor="#E65100"
+        android:pathData="M50,40 C44,40 40,44 40,50 C40,56 44,60 50,60 C56,60 60,56 60,50 C60,44 56,40 50,40 Z"/>
+    <!-- Pupil center -->
+    <path
+        android:fillColor="#1A1A1A"
+        android:pathData="M50,44 C47,44 44,47 44,50 C44,53 47,56 50,56 C53,56 56,53 56,50 C56,47 53,44 50,44 Z"/>
+    <!-- Highlight -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,46 C45,46 44,47 44,48 C44,49 45,50 46,50 C47,50 48,49 48,48 C48,47 47,46 46,46 Z"/>
+</vector>
